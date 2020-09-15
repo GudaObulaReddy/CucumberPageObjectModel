@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validate Free CRM Home Page Test",
+        "description": "",
+        "id": "free-crm-application-test;validate-free-crm-home-page-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13003854400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user opens browser",
+            "match": {
+              "location": "HomePageSteps.user_opens_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 88930300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on login Page",
+            "match": {
+              "location": "HomePageSteps.user_is_on_login_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2312990900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs into app",
+            "match": {
+              "location": "HomePageSteps.user_enters_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 122693800,
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003cCRMPRO[]\u003e but was:\u003cCRMPRO[ - CRM software for customer relationship management, sales, and support.]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat com.qa.stepDefinitions.HomePageSteps.validate_home_page_title(HomePageSteps.java:35)\r\n\tat ✽.Then validate home page title(C:/Users/Ramana Reddy/Desktop/selinium/CucumberPOM/src/main/java/com/qa/features/freecrm.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "validate home page title",
+            "match": {
+              "location": "HomePageSteps.validate_home_page_title()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "validate logged in username",
+            "match": {
+              "location": "HomePageSteps.validate_logged_in_username()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM Application Test",
+    "description": "",
+    "id": "free-crm-application-test",
+    "keyword": "Feature",
+    "uri": "C:/Users/Ramana Reddy/Desktop/selinium/CucumberPOM/src/main/java/com/qa/features/freecrm.feature"
+  }
+]
